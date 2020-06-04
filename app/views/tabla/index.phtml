@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DataTables - Prueba</title>
+
+	<title>Consumo Api Rick And Morty DataTables</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/4.0.0/material-components-web.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+
+	<!-- SCRIPTS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.material.min.js"></script>
+    <script type="text/javascript" class="init">
+		$(document).ready(function() {
+			$('#tabla').DataTable( {
+  							autoWidth: false,
+   							columnDefs: [{
+           							targets: ['_all'],
+           							className: 'mdc-data-table__cell'
+       								}]
+			} );
+		} );
+    </script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+	  		<div class="col s10 center">
+	  			<div class="card-panel teal lighten-2 z-depth-2">
+	  				<span class="grey-text text-lighten-4">
+	  					<h6>
+	  						Consumo API con DataTables
+	  					</h6>
+	  				</span>
+	  			</div>
+	  		</div>
+	  		<div class="col s2 center">
+	  			<div class="card-panel teal lighten-2 z-depth-2">
+	  				<span class="grey-text text-lighten-4">
+	  						<a href="/index/" class="mdl-button mdl-button--raised mdl-button--colored">Inicio</a>
+	  				</span>
+	  			</div>
+	  		</div>
+		</div>
+		<div class="row">
+	  		<div class="col s12 center">
+				<div class="fw-container">
+					<div class="fw-body">
+						<div class="content">
+							<table id="tabla" class="mdl-data-table" style="width:60%">
+						        <thead>
+						            <tr>
+						                <th>ID</th>
+						                <th>Nombre</th>
+						                <th>Estatus</th>
+						                <th>Especies</th>
+						                <th>Tipo</th>
+						                <th>Genero</th>
+						                <th>Fecha</th>
+						            </tr>
+						        </thead>
+						        <tbody>
+						        	<?php 
+						        	for ($i=0; $i < count($jsonObjet); $i++) { 
+							       	?>
+						            <tr>
+						                <td><?php echo $jsonObjet[$i]['id']; ?></td>
+						                <td><?php echo $jsonObjet[$i]['nombre']; ?></td>
+						                <td><?php echo $jsonObjet[$i]['status']; ?></td>
+						                <td><?php echo $jsonObjet[$i]['species']; ?></td>
+						                <td><?php echo $jsonObjet[$i]['type']; ?></td>
+						                <td><?php echo $jsonObjet[$i]['gender']; ?></td>
+						                <td><?php echo $jsonObjet[$i]['fecha']; ?></td>
+						            </tr>
+						        	<?php 
+						        	}
+						         	?>
+						        </tbody>
+						    </table>
+				   		</div>
+				   	</div>
+				</div>
+	  		</div>
+		</div>
+		<footer class="card-panel teal lighten-2 z-depth-2">
+          <div class="footer-copyright">
+            © 2020 Copyright Prueba de Habilidad
+          </div>
+        </footer>
+   	</div>
+</body>
+</html>

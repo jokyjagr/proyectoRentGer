@@ -1,0 +1,12 @@
+Mon 1 18:38:34 desarrollo php: [notice] E_NOTICE: Undefined index: port in /home/desarrollo/vendor/phalcon/devtools/src/Providers/DatabaseProvider.php on line 61
+Tue 2 22:29:07 desarrollo php: [notice] E_NOTICE: Undefined index: port in /home/desarrollo/vendor/phalcon/devtools/src/Providers/DatabaseProvider.php on line 61
+Tue 2 22:29:18 desarrollo php: [notice] E_NOTICE: Undefined index: port in /home/desarrollo/vendor/phalcon/devtools/src/Providers/DatabaseProvider.php on line 61
+Thu 4 13:51:37 desarrollo php: [notice] E_NOTICE: Undefined index: port in /home/desarrollo/vendor/phalcon/devtools/src/Providers/DatabaseProvider.php on line 61
+Thu 4 13:53:20 desarrollo php: [notice] E_NOTICE: Undefined index: port in /home/desarrollo/vendor/phalcon/devtools/src/Providers/DatabaseProvider.php on line 61
+Thu 4 13:54:00 desarrollo php: [notice] E_NOTICE: Undefined index: port in /home/desarrollo/vendor/phalcon/devtools/src/Providers/DatabaseProvider.php on line 61
+Thu 4 15:58:05 desarrollo php: [notice] E_NOTICE: Undefined index: port in /home/desarrollo/vendor/phalcon/devtools/src/Providers/DatabaseProvider.php on line 61
+Thu 4 15:58:30 desarrollo php: [notice] E_NOTICE: Undefined index: port in /home/desarrollo/vendor/phalcon/devtools/src/Providers/DatabaseProvider.php on line 61
+Thu 4 16:03:04 desarrollo php: [notice] E_NOTICE: Undefined index: port in /home/desarrollo/vendor/phalcon/devtools/src/Providers/DatabaseProvider.php on line 61
+Thu 4 16:43:07 desarrollo php: [notice] E_NOTICE: Undefined index: port in /home/desarrollo/vendor/phalcon/devtools/src/Providers/DatabaseProvider.php on line 61
+Thu 4 16:43:26 desarrollo php: [error] Uncaught exception: syntax error, unexpected ';', expecting '{' in /var/www/proyecto/app/models/Datosapirm.php on line 3
+Thu 4 16:43:34 desarrollo php: [error] Uncaught exception: syntax error, unexpected ';', expecting '{' in /var/www/proyecto/app/models/Datosapirm.php on line 3
